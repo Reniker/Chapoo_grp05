@@ -9,13 +9,14 @@ using System.Data.SqlClient;
 namespace Chapoo_grp05.DAL
 {
     class DAL
-        {//Made By Mark Kea
-            public SqlConnection dbconnection()
-            {
-                string connString = ConfigurationManager.ConnectionStrings["ChapooConnectionString"].ConnectionString;
-                SqlConnection sqls = new SqlConnection(connString);
+    {//Made By Mark Kea
 
-                return sqls;
-            }
+        public SqlConnection dbconnection()
+        {
+            string connString = ConfigurationManager.ConnectionStrings["ChapooConnectionString"].ConnectionString;
+            SqlConnection sqls = new SqlConnection(connString);
+
+            return sqls;
         }
     }
+}
